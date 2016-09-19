@@ -63,6 +63,7 @@ public class Tetris {
             }
 
             step();
+            System.out.println("---------------------------------------------------");
             //field.print();
             //sleeping between steps
             Thread.sleep(400);
