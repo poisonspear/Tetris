@@ -6,6 +6,7 @@ package tetris;
  * Date    19.09.2016
  */
 public class FigureFactory {
+    //some simple figures in static array
     private static int[][][] figures = {
             {
                     {1, 1, 0},
@@ -44,6 +45,7 @@ public class FigureFactory {
             }
     };
 
+    //return random figure from previous array
     public static Figure getRandomFigure(int x, int y) {
         return new Figure(x, y, figures[(int) (Math.random() * 7)]);
     }

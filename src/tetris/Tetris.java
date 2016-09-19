@@ -32,6 +32,7 @@ public class Tetris {
 
     public void start() throws InterruptedException {
         isGameOver = false;
+        //construct first figure
         figure = FigureFactory.getRandomFigure(field.getWidth() / 2, 0);
         while (!isGameOver) {
             //listen keyboard events
@@ -39,6 +40,7 @@ public class Tetris {
 
             step();
             field.print();
+            //sleeping between steps
             Thread.sleep(400);
         }
         System.out.println("GAME OVER");
